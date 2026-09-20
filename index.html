@@ -134,16 +134,6 @@ nav.main-nav a:hover{color:var(--text)}
 }
 .card h3{font-size:17px;margin-bottom:8px}
 .card p{font-size:14px;color:var(--muted)}
-.card-photo{
-  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-  overflow:hidden;transition:border-color .15s,transform .15s;padding:0;
-}
-.card-photo:hover{border-color:rgba(212,167,44,.4);transform:translateY(-2px)}
-.card-photo .photo-wrap{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;background:var(--bg-alt)}
-.card-photo .photo-wrap img{width:100%;height:100%;object-fit:cover;display:block}
-.card-photo .card-photo-body{padding:18px 20px 22px}
-.card-photo h3{font-size:16px;margin-bottom:6px}
-.card-photo p{font-size:13.5px;color:var(--muted);line-height:1.5}
 .steps{grid-template-columns:repeat(4,1fr)}
 .step{position:relative;padding-top:8px}
 .step-num{
@@ -260,61 +250,45 @@ footer{border-top:1px solid var(--border);padding:36px 0;margin-top:40px}
         <p class="muted">Берёмся и за мелкий ремонт на 15 минут, и за задачи в несколько часов работы.</p>
       </div>
       <div class="grid services-grid">
-        <div class="card-photo">
-          <div class="photo-wrap"><img src="images/electrika.jpg" alt="Электрика — мастер на час Ташкент" loading="lazy" width="640" height="480"></div>
-          <div class="card-photo-body">
-            <h3>Электрика</h3>
-            <p>Розетки, выключатели, освещение, замена проводки, устранение неисправностей.</p>
-          </div>
+        <div class="card">
+          <div class="icon-wrap"><svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
+          <h3>Электрика</h3>
+          <p>Розетки, выключатели, освещение, замена проводки, устранение неисправностей.</p>
         </div>
-        <div class="card-photo">
-          <div class="photo-wrap"><img src="images/santehnika.jpg" alt="Сантехника — мастер на час Ташкент" loading="lazy" width="640" height="480"></div>
-          <div class="card-photo-body">
-            <h3>Сантехника</h3>
-            <p>Смесители, трубы, унитазы, устранение протечек и засоров, установка приборов.</p>
-          </div>
+        <div class="card">
+          <div class="icon-wrap"><svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L2 19l3 3 7.3-7.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z"/></svg></div>
+          <h3>Сантехника</h3>
+          <p>Смесители, трубы, унитазы, устранение протечек и засоров, установка приборов.</p>
         </div>
-        <div class="card-photo">
-          <div class="photo-wrap"><img src="images/mebel.jpg" alt="Сборка мебели — мастер на час Ташкент" loading="lazy" width="640" height="480"></div>
-          <div class="card-photo-body">
-            <h3>Сборка мебели</h3>
-            <p>Сборка, разборка и ремонт мебели любой сложности — от шкафа до кухни.</p>
-          </div>
+        <div class="card">
+          <div class="icon-wrap"><svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M4 12h16M12 3v18"/></svg></div>
+          <h3>Сборка мебели</h3>
+          <p>Сборка, разборка и ремонт мебели любой сложности — от шкафа до кухни.</p>
         </div>
-        <div class="card-photo">
-          <div class="photo-wrap"><img src="images/remont.jpg" alt="Мелкий бытовой ремонт — мастер на час Ташкент" loading="lazy" width="640" height="480"></div>
-          <div class="card-photo-body">
-            <h3>Мелкий бытовой ремонт</h3>
-            <p>Навеска полок, карнизов, картин, мелкий ремонт по дому «под ключ».</p>
-          </div>
+        <div class="card">
+          <div class="icon-wrap"><svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="9" rx="1"/><circle cx="9" cy="8.5" r="1.5"/><path d="M3 13l3.5-3.5L9 12l3-3 3 4"/><path d="M18 3v18M18 8h3M18 16h3"/></svg></div>
+          <h3>Мелкий бытовой ремонт</h3>
+          <p>Навеска полок, карнизов, картин, мелкий ремонт по дому «под ключ».</p>
         </div>
-        <div class="card-photo">
-          <div class="photo-wrap"><img src="images/kondicioner.jpg" alt="Кондиционеры и техника — мастер на час Ташкент" loading="lazy" width="640" height="480"></div>
-          <div class="card-photo-body">
-            <h3>Кондиционеры и техника</h3>
-            <p>Подключение и мелкое обслуживание бытовой техники и кондиционеров.</p>
-          </div>
+        <div class="card">
+          <div class="icon-wrap"><svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="7" rx="2"/><path d="M6 17v2M10 17v3M14 17v2M18 17v3"/></svg></div>
+          <h3>Кондиционеры и техника</h3>
+          <p>Подключение и мелкое обслуживание бытовой техники и кондиционеров.</p>
         </div>
-        <div class="card-photo">
-          <div class="photo-wrap"><img src="images/sverlenie.jpg" alt="Сверление и навеска — мастер на час Ташкент" loading="lazy" width="640" height="480"></div>
-          <div class="card-photo-body">
-            <h3>Сверление и навеска</h3>
-            <p>Сверление отверстий в бетоне и кафеле, монтаж креплений и оборудования.</p>
-          </div>
+        <div class="card">
+          <div class="icon-wrap"><svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15l4 4 8-8-4-4-8 8z"/><path d="M15 11l3-3 3 3-3 3"/><path d="M13 9l2-2"/></svg></div>
+          <h3>Сверление и навеска</h3>
+          <p>Сверление отверстий в бетоне и кафеле, монтаж креплений и оборудования.</p>
         </div>
-        <div class="card-photo">
-          <div class="photo-wrap"><img src="images/pokraska.jpg" alt="Покраска и шпаклёвка — мастер на час Ташкент" loading="lazy" width="640" height="480"></div>
-          <div class="card-photo-body">
-            <h3>Покраска и шпаклёвка</h3>
-            <p>Заделка трещин, шпаклёвка стен и потолков, косметическая покраска.</p>
-          </div>
+        <div class="card">
+          <div class="icon-wrap"><svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="5" rx="1"/><path d="M9 9v4"/><rect x="6" y="13" width="6" height="7" rx="1"/></svg></div>
+          <h3>Покраска и шпаклёвка</h3>
+          <p>Заделка трещин, шпаклёвка стен и потолков, косметическая покраска.</p>
         </div>
-        <div class="card-photo">
-          <div class="photo-wrap"><img src="images/elektromontazh.jpg" alt="Электромонтаж под ключ — мастер на час Ташкент" loading="lazy" width="640" height="480"></div>
-          <div class="card-photo-body">
-            <h3>Электромонтаж под ключ</h3>
-            <p>Полная замена проводки, автоматы, щитки — с расчётом и без сюрпризов.</p>
-          </div>
+        <div class="card">
+          <div class="icon-wrap"><svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 8h3M8 12h3M8 16h3M15 7v3M15 14v3"/></svg></div>
+          <h3>Электромонтаж под ключ</h3>
+          <p>Полная замена проводки, автоматы, щитки — с расчётом и без сюрпризов.</p>
         </div>
       </div>
     </div>
@@ -436,12 +410,7 @@ footer{border-top:1px solid var(--border);padding:36px 0;margin-top:40px}
     <span>© 2026 Мастер на час Ташкент</span>
     <span><a href="tel:+998909883834">+998 90 988-38-34</a> · Пн–пт 09:00–18:00</span>
   </div>
-  <div class="container" style="font-size:11px;color:var(--muted);opacity:.6;margin-top:10px;line-height:1.6">
-    Фото: <a href="https://www.pexels.com/video/construction-worker-installing-electrical-wiring-34572318/" target="_blank" rel="noopener">Sergei Starostin</a>,
-    <a href="https://www.pexels.com/video/an-air-conditioner-installed-on-a-window-3010813/" target="_blank" rel="noopener">Athena Sandrini</a>,
-    <a href="https://www.pexels.com/video/a-person-holding-a-drill-in-their-hand-27981584/" target="_blank" rel="noopener">VIDEOS2B Amazon Productions</a>,
-    <a href="https://www.pexels.com/video/technician-performing-electrical-component-repair-29731535/" target="_blank" rel="noopener">Dan Butler</a> — Pexels
-  </div>
+
 </footer>
 
 <div class="mobile-bar">
